@@ -47,6 +47,38 @@ public abstract class Zombie {
         }
     }
 
+    public float getY() {
+        return y;
+    }
+
+    public float getSpeed() {
+        return speed;
+    }
+
+    public int getBaseDamage() {
+        return baseDamage;
+    }
+
+    public int getBaseHp() {
+        return baseHp;
+    }
+
+    public int getWaveCost() {
+        return waveCost;
+    }
+
+    public boolean isGlowing() {
+        return isGlowing;
+    }
+
+    public Stack<Armor> getArmors() {
+        return armors;
+    }
+
+    public AttackStrategy getAttackStrategy() {
+        return attackStrategy;
+    }
+
     public boolean isDead() {
         return this.currentHp <= 0 && armors.isEmpty();
     }
@@ -55,4 +87,48 @@ public abstract class Zombie {
     public String getName() { return name; }
     public float getX() { return x; }
     public int getCurrentHp() { return currentHp; }
+
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSpeed(float speed) {
+        this.speed = speed;
+    }
+
+    public void setBaseDamage(int baseDamage) {
+        this.baseDamage = baseDamage;
+    }
+
+    public void setBaseHp(int baseHp) {
+        this.baseHp = baseHp;
+    }
+
+    public void setCurrentHp(int currentHp) {
+        this.currentHp = currentHp;
+    }
+
+    public void setWaveCost(int waveCost) {
+        this.waveCost = waveCost;
+    }
+
+    public void setGlowing(boolean glowing) {
+        isGlowing = glowing;
+    }
+
+    public void setArmors(Stack<Armor> armors) {
+        this.armors = armors;
+    }
+
+    public void setAttackStrategy(AttackStrategy attackStrategy) {
+        this.attackStrategy = attackStrategy;
+    }
 }
