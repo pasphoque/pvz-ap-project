@@ -51,9 +51,11 @@ public class CommandParser {
                 args.put("username", matcher.group("username"));
                 args.put("email", matcher.group("email"));
                 args.put("answer", matcher.group("answer"));
+            } else if (command == Command.ADVANCE_TIME) {
+                args.put("ticks", matcher.group("ticks"));
             }
-
         }
+
         return args;
     }
 }

@@ -11,6 +11,8 @@ public enum Command {
     MENU_ENTER("(?i)^\\S*menu\\s+enter\\s+(?<menuName>.+)\\S*$"),
     MENU_EXIT("(?i)^\\S*menu\\s+exit\\S*$"),
     MENU_LOGOUT("(?i)^\\S*menu\\s+logout\\S*$"),
+    ADVANCE_TIME("(?i)^\\S*advance\\s+time\\s+-t\\s+(?<ticks>\\d+)\\s+ticks\\S*$"),
+    SHOW_CURRENT_MENU("(?i)^\\S*menu\\s+show\\S+current\\S*$"),
     UNKNOWN("");
 
     private final Pattern pattern;

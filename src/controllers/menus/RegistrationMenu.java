@@ -115,6 +115,10 @@ public class RegistrationMenu extends BaseMenu {
                 app.exit();
                 break;
 
+            case SHOW_CURRENT_MENU:
+                view.displayMessage("Registration Menu");
+                break;
+
             default:
                 view.displayError("Command not supported in the Registration Menu.");
                 break;

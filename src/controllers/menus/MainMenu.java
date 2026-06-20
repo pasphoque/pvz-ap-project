@@ -45,6 +45,10 @@ public class MainMenu extends BaseMenu {
                 view.displayError("Use menu logout to sign out of your account.");
                 break;
 
+            case SHOW_CURRENT_MENU:
+                view.displayMessage("Main Menu");
+                break;
+
             default:
                 view.displayError("Command not supported in the Main Menu.");
                 break;

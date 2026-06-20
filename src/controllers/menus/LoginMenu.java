@@ -47,15 +47,11 @@ public class LoginMenu extends BaseMenu {
 
                 if (!fpUser.getSecurityAnswer().equals(fpAnswer)) {
                     view.displayError("Incorrect security answer.");
-                    // Returns to first menu as per documentation implicitly by doing nothing
                     return;
                 }
 
-                // If correct, documentation says: "Message Data To be that Password Passage New particle for direct object Enter Do"
-                // For a CLI, we can just print the success and ask them to login (or you can prompt for a new password here).
-                // Assuming we just reset it or allow them to set a new one. Here is a simple prompt:
-                view.displaySuccess("Security answer correct! In a full implementation, you would enter a new password here.");
-                // TODO: Implement password updating logic.
+                view.displaySuccess("Security answer correct! Password recovery verified.");
+                // TODO: prompt the user for a new password here.
                 break;
 
             case MENU_ENTER:
@@ -68,6 +64,10 @@ public class LoginMenu extends BaseMenu {
 
             case MENU_EXIT:
                 app.changeMenuState(new RegistrationMenu());
+                break;
+
+            case SHOW_CURRENT_MENU:
+                view.displayMessage("Login Menu");
                 break;
 
             default:

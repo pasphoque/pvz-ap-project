@@ -13,6 +13,8 @@ public class Application {
 
     private UserRepository userRepository;
     private User activeUser;
+    private GameEngine currentGameEngine;
+
 
     public Application() {
         this.scanner = new Scanner(System.in);
@@ -61,4 +63,8 @@ public class Application {
     public void setActiveUser(User activeUser) {
         this.activeUser = activeUser;
     }
+
+    public GameEngine getCurrentGameEngine() { return currentGameEngine; }
+
+    public void setCurrentGameEngine(GameEngine engine) { this.currentGameEngine = engine; }
 }
