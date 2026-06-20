@@ -13,6 +13,7 @@ public class MainMenu extends BaseMenu {
                 switch (menuName) {
                     case "game":
                         view.displayMessage("Transitioning to Game Menu...");
+                        app.changeMenuState(new GameMenu());
                         break;
                     case "profile":
                         view.displayMessage("Transitioning to Profile Menu...");

@@ -13,6 +13,8 @@ public enum Command {
     MENU_LOGOUT("(?i)^\\S*menu\\s+logout\\S*$"),
     ADVANCE_TIME("(?i)^\\S*advance\\s+time\\s+-t\\s+(?<ticks>\\d+)\\s+ticks\\S*$"),
     SHOW_CURRENT_MENU("(?i)^\\S*menu\\s+show\\S+current\\S*$"),
+    PUT_PLANT("(?i)^\\S*put\\s+(?<plantName>[a-zA-Z]+)\\s+(?<x>\\d+)\\s+(?<y>\\d+)\\S*$"),
+    SPAWN_ZOMBIE("(?i)^\\S*spawn\\s+(?<zombieName>[a-zA-Z]+)\\s+(?<x>\\d+)\\s+(?<y>\\d+)\\S*$"),
     UNKNOWN("");
 
     private final Pattern pattern;

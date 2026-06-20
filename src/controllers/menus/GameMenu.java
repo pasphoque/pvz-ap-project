@@ -37,6 +37,52 @@ public class GameMenu extends BaseMenu {
                 view.displayMessage("Game Menu");
                 break;
 
+            case PUT_PLANT:
+                String pName = args.get("plantName").toLowerCase();
+                int px = Integer.parseInt(args.get("x"));
+                int py = Integer.parseInt(args.get("y"));
+
+                models.grid.Tile tile = engine.getBoard().getTile(px, py);
+                if (tile == null) {
+                    view.displayError("Invalid coordinates.");
+                    break;
+                }
+
+                models.entities.Plant plant = null;
+                if (pName.equals("peashooter")) {
+                    plant = new models.entities.plants.Peashooter(px, py, engine);
+                } else if (pName.equals("sunflower")) {
+                    plant = new models.entities.plants.Sunflower(px, py, engine);
+                } else {
+                    view.displayError("Unknown plant (Try 'peashooter' or 'sunflower').");
+                    break;
+                }
+
+                tile.getPlantedPlants().add(plant);
+                view.displaySuccess("Planted " + pName + " at " + px + ", " + py);
+                printBoard(); // Re-render the board
+                break;
+
+            case SPAWN_ZOMBIE:
+                String zName = args.get("zombieName").toLowerCase();
+                int zx = Integer.parseInt(args.get("x"));
+                int zy = Integer.parseInt(args.get("y"));
+
+                models.entities.Zombie zombie = null;
+                if (zName.equals("base")) {
+                    zombie = new models.entities.zombies.BaseZombie(zx, zy);
+                } else if (zName.equals("conehead")) {
+                    zombie = new models.entities.zombies.ConeheadZombie(zx, zy);
+                } else {
+                    view.displayError("Unknown zombie (Try 'base' or 'conehead').");
+                    break;
+                }
+
+                engine.getActiveZombies().add(zombie);
+                view.displaySuccess("Spawned " + zName + " zombie at " + zx + ", " + zy);
+                printBoard(); // Re-render the board
+                break;
+
             default:
                 view.displayError("Command not supported in the Game Menu.");
                 break;

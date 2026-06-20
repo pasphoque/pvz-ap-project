@@ -27,5 +27,27 @@
     "securityAnswer": "hehe",
     "coins": 0,
     "diamonds": 0
+  },
+  {
+    "username": "hehe",
+    "passwordHash": "3219b1b31571921437d5cd937df3b4a4fa45aff2ae02f14a150807a28f5e519a",
+    "nickname": "hehe",
+    "email": "hehe@hehe.com",
+    "gender": "nonbinary",
+    "securityQuestion": "1. What is the name of your favorite pet?",
+    "securityAnswer": "hehe",
+    "coins": 0,
+    "diamonds": 0
+  },
+  {
+    "username": "hehe1",
+    "passwordHash": "3219b1b31571921437d5cd937df3b4a4fa45aff2ae02f14a150807a28f5e519a",
+    "nickname": "hehe",
+    "email": "hehe@hehe.com",
+    "gender": "nonbinary",
+    "securityQuestion": "1. What is the name of your favorite pet?",
+    "securityAnswer": "hehe",
+    "coins": 0,
+    "diamonds": 0
   }
 ]

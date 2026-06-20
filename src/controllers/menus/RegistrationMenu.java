@@ -100,7 +100,7 @@ public class RegistrationMenu extends BaseMenu {
                 waitingForSecurityQuestion = false;
                 pendingUser = null;
 
-                app.changeMenuState(new MainMenu());
+                app.changeMenuState(new LoginMenu());
                 break;
 
             case MENU_ENTER:

@@ -53,6 +53,14 @@ public class CommandParser {
                 args.put("answer", matcher.group("answer"));
             } else if (command == Command.ADVANCE_TIME) {
                 args.put("ticks", matcher.group("ticks"));
+            } else if (command == Command.PUT_PLANT) {
+                args.put("plantName", matcher.group("plantName"));
+                args.put("x", matcher.group("x"));
+                args.put("y", matcher.group("y"));
+            } else if (command == Command.SPAWN_ZOMBIE) {
+                args.put("zombieName", matcher.group("zombieName"));
+                args.put("x", matcher.group("x"));
+                args.put("y", matcher.group("y"));
             }
         }
 
