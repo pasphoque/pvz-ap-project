@@ -1,0 +1,20 @@
+[
+  {
+    "username": "HatsuneMiku",
+    "passwordHash": "e7aebfa1af9ccb26fff0835b696ac48068893967847b539b7f932146c3401e7c",
+    "nickname": "Miku",
+    "email": "Hatsune@Miku.com",
+    "gender": "Non-binary",
+    "coins": 0,
+    "diamonds": 0
+  },
+  {
+    "username": "KasaneTeto",
+    "passwordHash": "3219b1b31571921437d5cd937df3b4a4fa45aff2ae02f14a150807a28f5e519a",
+    "nickname": "Teto",
+    "email": "kasane@teto.com",
+    "gender": "female",
+    "coins": 0,
+    "diamonds": 0
+  }
+]
