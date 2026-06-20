@@ -1,4 +1,4 @@
-package services.menus;
+package controllers.services.menus;
 
 import enums.Command;
 
