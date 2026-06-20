@@ -1,4 +1,4 @@
-package controllers.services.menus;
+package controllers.menus;
 
 import models.Application;
 

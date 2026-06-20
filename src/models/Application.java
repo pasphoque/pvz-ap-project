@@ -1,7 +1,7 @@
 package models;
 
-import controllers.services.menus.MenuState;
-import controllers.services.menus.RegistrationMenu;
+import controllers.menus.MenuState;
+import controllers.menus.RegistrationMenu;
 import models.repositories.UserRepository;
 
 import java.util.Scanner;

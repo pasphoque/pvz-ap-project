@@ -16,5 +16,16 @@
     "gender": "female",
     "coins": 0,
     "diamonds": 0
+  },
+  {
+    "username": "meowmeow1",
+    "passwordHash": "4bbae5fad2b2c63c968c14e3fda22c88523827ae0e5d408c21041b9ca449bb65",
+    "nickname": "meowy",
+    "email": "meow@meow1.com",
+    "gender": "kirekhar",
+    "securityQuestion": "1. What is the name of your favorite pet?",
+    "securityAnswer": "hehe",
+    "coins": 0,
+    "diamonds": 0
   }
 ]

@@ -43,7 +43,16 @@ public class CommandParser {
                 args.put("stayLoggedIn", matcher.group("stayLoggedIn") != null ? "true" : "false");
             } else if (command == Command.MENU_ENTER) {
                 args.put("menuName", matcher.group("menuName"));
+            } else if (command == Command.PICK_QUESTION) {
+                args.put("questionNumber", matcher.group("questionNumber"));
+                args.put("answer", matcher.group("answer"));
+                args.put("answerConfirm", matcher.group("answerConfirm"));
+            } else if (command == Command.FORGET_PASSWORD) {
+                args.put("username", matcher.group("username"));
+                args.put("email", matcher.group("email"));
+                args.put("answer", matcher.group("answer"));
             }
+
         }
         return args;
     }

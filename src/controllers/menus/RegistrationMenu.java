@@ -1,4 +1,4 @@
-package controllers.services.menus;
+package controllers.menus;
 
 import controllers.services.AuthenticationService;
 import enums.Command;
